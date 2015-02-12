@@ -15,27 +15,25 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="reveal.js/2.6/css/reveal.min.css">
-        <link rel="stylesheet" href="reveal.js/2.6/css/theme/default.css">
+        <link rel="stylesheet" href="reveal.js/3.0/css/reveal.css">
+        <link rel="stylesheet" href="reveal.js/3.0/css/theme/league.css" id="theme">
 
-        <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="reveal.js/2.6/lib/css/zenburn.css">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/3.0/lib/css/zenburn.css">
 
-        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-        <script>
-            if( window.location.search.match( /print-pdf/gi ) ) {
-                var link = document.createElement( 'link' );
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'reveal.js/2.6/css/print/pdf.css';
-                document.getElementsByTagName( 'head' )[0].appendChild( link );
-            }
-        </script>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/3.0/css/print/pdf.css' : 'reveal.js/3.0/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 
         <!--[if lt IE 9]>
-        <script src="reveal.js/2.6/lib/js/html5shiv.js"></script>
+        <script src="reveal.js/3.0/lib/js/html5shiv.js"></script>
         <![endif]-->
 
         <style>
@@ -155,38 +153,39 @@ table.profile-times td.bad {
             <div class="slides">
 
                 <!-- Use external markdown resource, separate slides by two newlines -->
-                <section data-markdown="./mix-neo4j-text.md" data-separator="^\n\n" data-notes="^// Notes:"></section>
+                <section data-markdown="./mix-neo4j-text.md" data-separator="^\n\n" data-separator-notes="^// Notes:"></section>
 
             </div>
 
         </div>
 
-        <script src="reveal.js/2.6/lib/js/head.min.js"></script>
-        <script src="reveal.js/2.6/js/reveal.min.js"></script>
+		<script src="reveal.js/3.0/lib/js/head.min.js"></script>
+		<script src="reveal.js/3.0/js/reveal.js"></script>
 
         <script>
 
-            // Full list of configuration options available here:
+            // Full list of configuration options available at:
             // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
                 controls: true,
                 progress: true,
                 history: true,
                 center: true,
+                transition: 'concave',
 
                 width: 1024,
                 height: 768,
                 margin: 0,
 
-                // Optional libraries used to extend on reveal.js
+                // Optional reveal.js plugins
                 dependencies: [
-                    { src: 'reveal.js/2.6/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'reveal.js/2.6/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'reveal.js/2.6/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    // { src: 'reveal.js/2.6/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: 'reveal.js/2.6/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                    { src: 'reveal.js/2.6/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-                    { src: 'reveal.js/2.6/plugin/remotes/remotes.js', async: true, condition: function() { return !!location.search.match( /remote/i ); } }
+                    { src: 'reveal.js/3.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/3.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/3.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'reveal.js/3.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/3.0/plugin/zoom-js/zoom.js', async: true },
+                    { src: 'reveal.js/3.0/plugin/notes/notes.js', async: true },
+                    { src: 'reveal.js/3.0/plugin/remotes/remotes.js', async: true, condition: function() { return !!location.search.match( /remote/i ); } }
                 ]
             });
 
