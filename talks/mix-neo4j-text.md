@@ -2,34 +2,23 @@
 
 <!-- .slide: class="title" -->
 
-# <span class="red">Betting the Company</span>
-## (Again?!) on a
-# <span class="green">Graph Database</span>
-
-### The Story Continued…
+# <span class="red">Building Mix</span>
+# <span class="green">With Neo4j</span>
 
 Aseem Kishore<br/>
-Oct 2014<br/>
+FiftyThree<br/>
 
 // Notes:
-Hi guys. My name is [Aseem Kishore](http://aseemk.com/). I'm a developer at a startup called [FiftyThree](http://www.fiftythree.com/). We make an iPad app called [Paper](http://www.fiftythree.com/paper). But I'll get to all that and more.
+Hi guys. My name is [Aseem Kishore](http://aseemk.com/). I'm a developer at a startup called [FiftyThree](http://www.fiftythree.com/). We make an iPad app called [Paper](http://www.fiftythree.com/paper), but I'll get to all that and more.
 <p/>
 Some of you may know me, maybe from previous GraphConnects. I've previously given a talk entitled [Betting the Company on a Graph Database](http://aseemk.com/talks/neo4j-lessons-learned), sharing my experiences and lessons learned building a startup on [Neo4j](http://neo4j.org/).
 <p/>
 Today, I'm excited to share the continuation to that story.
 
 
-<!-- INTRO: THINGDOM -->
+<!-- INTRO: PAPER -->
 
-<!-- .slide: data-background="/images/neo4j-lessons-learned/thingdom-hp-gasi.png" data-background-transition="convex" -->
-
-// Notes:
-The startup I built (along with my friend and peer, [Daniel Gasienica](http://gasi.ch/)) was [The Thingdom](http://www.thethingdom.com/), a social network around products.
-
-
-<!-- INTRO: FIFTYTHREE -->
-
-<!-- .slide: data-background="/images/neo4j-lessons-learned/fiftythree-hp.png" data-background-transition="convex" -->
+<!-- .slide: data-background-iframe="http://www.fiftythree.com/paper" data-background-transition="convex" -->
 
 // Notes:
 I shared that The Thingdom was acquired by [FiftyThree](http://www.fiftythree.com/), and I joined the team to transform its tech into something new.
@@ -37,66 +26,23 @@ I shared that The Thingdom was acquired by [FiftyThree](http://www.fiftythree.co
 I just couldn't share what that new thing was...
 
 
-<!-- INTRO: TIMELINE -->
+<!-- INTRO: PENCIL -->
 
-<!-- .slide: data-background="/images/mix-neo4j/aseemk-timeline.jpg" data-background-transition="convex" -->
-
-// Notes:
-We worked in secret on that thing for quite a while. I hit my two-year anniversary at FiftyThree this past March, and I drew this sketch then, promising that we'd ship before the year was up. =)
-<p/>
-(The top line is a reference to the burger chain love of my NYC life, Shake Shack. It blows In 'N Out *out* of the water.)
-<p/>
-Well, I'm extremely pleased to say that we did meet that goal! We shipped this new product last month...
-<p/>
-[Via](https://mix.fiftythree.com/aseemk/24342)
+<!-- .slide: data-background-iframe="http://www.fiftythree.com/pencil" data-background-transition="convex" -->
 
 
 <!-- INTRO: MIX -->
 
-<!-- .slide: data-background="/images/mix-neo4j/mix-billboard-1024x768.png" data-background-transition="convex" -->
+<!-- .slide: data-background-iframe="http://www.fiftythree.com/" data-background-transition="convex" -->
 
 <p class="stretch"><a href="http://player.vimeo.com/video/105656434?autoplay=1" style="color: transparent; display: block; width: 100%; height: 100%;">&nbsp;</a></p>
 
-// Notes:
-And here it is! [Mix by FiftyThree](https://mix.fiftythree.com/).
-<p/>
-Be sure to [watch the video](https://vimeo.com/105656434) too. =)
+<!-- Why won't this work?!
+http://player.vimeo.com/video/105656434?autoplay=1&color=fa9d66&title=0&byline=0&portrait=0
+-->
 
 
-<!-- .slide: class="subtitle" -->
-
-# <span class="orange">Mix</span> ![♥](/images/mix-neo4j/mix-remix-heart.svg) <!-- .element: class="mix-remix-heart" --> <span class="green">Graphs</span>
-
-## Bringing Ideas Together
-
-// Notes:
-
-
-<!-- GRAPHCONNECT 2014 + MONSTERS -->
-
-<!-- .slide: data-background="/images/mix-neo4j/graphconnect-2014.jpg" data-background-transition="default" -->
-
-// Notes:
-[Via](https://mix.fiftythree.com/GraphConnect/464175)
-
-
-<!-- .slide: data-background="/images/mix-neo4j/gc-monster1.jpg" data-background-transition="none" -->
-
-// Notes:
-[Via](https://mix.fiftythree.com/391241-Natalia-La-Fey/471737)
-
-
-<!-- .slide: data-background="/images/mix-neo4j/gc-monster2.jpg" data-background-transition="none" -->
-
-// Notes:
-[Via](https://mix.fiftythree.com/391241-Natalia-La-Fey/474539)
-
-
-<!-- .slide: data-background="/images/mix-neo4j/gc-monster3.jpg" data-background-transition="none" -->
-
-// Notes:
-[Via](https://mix.fiftythree.com/391241-Natalia-La-Fey/482993)
-
+<!-- INTRO: MIX <3 NEO4J -->
 
 # <span class="orange">Mix</span> ![♥](/images/mix-neo4j/mix-remix-heart.svg) <!-- .element: class="mix-remix-heart" --> <span class="green">Neo<span class="fragment fade-out">4j</a></span>
 
