@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
     <head>
         <meta charset="utf-8">
@@ -166,11 +166,10 @@ section#dave-shout-out
     <section>
         # <span class="negative"> Vim是什么？</span>
          &nbsp;
-        ### Vim是为程序员而生的编辑器
          &nbsp;
-        ###  Vim是这个星球上最好的编辑器
+        ###  Vim是为程序员而生的编辑器
          &nbsp;
-        ###  This PPT is written in Vim
+        ###  本PPT采用VIM+PHPStorm编写
     </section>
 
     <section>
@@ -178,7 +177,7 @@ section#dave-shout-out
     </section>
 
     <section>
-        #<span class="negative">Vi 和 Vim 的区别与联系</span>
+        #<span class="negative">Vi And Vim </span>
          &nbsp;
         <p class="fragment">
             Vi是Bill Joy 在1976年开发的一款编辑器，Vi来自Visual这个单词。
@@ -189,12 +188,10 @@ section#dave-shout-out
         </p>
     </section>
 
-
-
     <section>
         #<span class="negative">Vim的最大特点</span>
          &nbsp;
-        ###<p  class="fragment">自身功能强大</p>
+        ###<p  class="fragment">自身功能强大,为效率而生</p>
         ###<p  class="fragment">海量插件，覆盖各个方面</p>
         ###<p  class="fragment">可根据需求高度定制</p>
     </section>
@@ -214,6 +211,10 @@ section#dave-shout-out
         ###<p class="fragment"> Linux/Win下的Terminal/CMD </p>
         ###<p class="fragment"> Chrome/Firefox的插件</p>
         ###<p class="fragment"> PHPStorm的IdeaVim插件</p>
+    </section>
+
+    <section>
+        [![](/images/vim/vim_keyboard.jpg)](http://www.google.com/)
     </section>
 
     <section>
@@ -245,10 +246,9 @@ section#dave-shout-out
     <section>
         #<span class="negative">Vim 搜索</span>
         ###<p class="fragment">/pattern 向上搜索 </p>
-        ###<p>?pattern 向下搜索 </p>
-        ###<p>n/N 同方向/反方向继续搜索</p>
-        ###<p>/^place 仅搜索place开头的内容 </p>
-        ###<p>更多正则匹配....</p>
+        ###<p class="fragment">?pattern 向下搜索 </p>
+        ###<p class="fragment">n/N 同方向/反方向继续搜索</p>
+        ###<p class="fragment">/^place 仅搜索place开头的内容 </p>
     </section>
 
     <section>
@@ -276,12 +276,13 @@ section#dave-shout-out
     </section>
 
     <section>
-         #<span class="negative">Vim Script Language</span>
-
-                    <pre><code data-trim data-noescape>
-                        :h usr_41.txt
-                    </code></pre>
+        #<span class="negative">重要配置举例</span>
+        &nbsp;
+        &nbsp;
+        [![](/images/vim/vimrc_example.png)](http://www.vim.org/)
     </section>
+
+
 
     <section>
          # <span class="negative">Vim的多屏 </span>
@@ -331,7 +332,7 @@ section#dave-shout-out
 
     <section>
          &nbsp;
-         ##<span class="negative">插件的寻找与安装</span>
+         #<span class="negative">Vim插件</span>
          &nbsp;
          ###<p>http://www.vim.org/scripts/ </p>
     </section>
@@ -354,44 +355,95 @@ section#dave-shout-out
          #<span class="negative"> Vim调用外部命令 </span>
          ###<p> :!ls /var/www</p>
          ###<p> :r !ls /var/www</p>
-        ###<p>.....</p>
+         ###head -n 100 access.log |vim -
     </section>
 
     <section>
          #<span class="negative">Vim 组合命令</span>
          ###<p>:g/s*^$/d 删除所有空行</p>
          ###<p>:g!/^dd/d 删除不含字符串'dd'的行</p>
-         ###<p>.....</p>
-    </section>
-
-    <section>
-         #<span class="negative"> vimrc的管理 </span>
-         &nbsp;
-         ###<p> 吸收别人的好的配置文件</p>
-         ###<p> 维护自己的配置文件 </p>
-         ###<p> 纳入Git进行控制和维护 </p>
+         ###svn diff file | vim -R -
     </section>
 
     <section>
          #<span class="negative">怎么学Vim</span>
          &nbsp;
+         ###<p>先要多看各种vimrc</p>
+         ###<p>只保留自己需要的功能</p>
          ###<p>练习练习再练习</p>
-         ###<p>思考思考再思考</p>
-         ###<p>只选择自己需要的功能</p>
          ###<p>部分快捷键先记后忘</p>
-         ###<p>Vim 101 Hacks.pdf</p>
     </section>
 
     <section>
-         <h1>And Linux ?</h1>
-        <p>basic command ,speed up,native,trace,debug,KISS and so on</p>
+         #<span class="negative">Vimtutor</span>
+         ###<p>man vimtutor</p>
+         ###<p>/usr/share/vim/vim74/tutor/tutor[.language]</p>
+    </section>
+
+    <section>
+        #<span class="negative"> vimrc的管理 </span>
+        &nbsp;
+        ###<p> 复杂配置要注释</p>
+        ###<p> 吸收别人的好的配置文件</p>
+        ###<p> 纳入Git进行控制和维护 </p>
+        ###<p> 维护自己的配置文件 </p>
+    </section>
+
+    <section>
+        #<span class="negative"> 资料推荐</span>
+        &nbsp;
+        ###<p>Vim 101 Hacks</p>
+        ###<p>Practical Vim</p>
+        ###<p>:help</p>
+        ###<p>https://github.com/search?q=vimrc</p>
+    </section>
+
+    <section>
+        #<span class="negative">Vim Script Language</span>
+        ##<p>:h usr_41.txt</p>
 
     </section>
 
     <section>
-         <h1>!!!!!!!!!!!!!!!!!!图～～～两张图组成动态效果图！～～</h1>
+        #<span class="negative"> Vimium</span>
+        &nbsp;
+        ###<p>Chrome上的vim</p>
+        ###<p>继承了Vim很多快捷键</p>
+        ###<p>但是也可以完全自己定制</p>
+        ###<p>作用：用键盘操作浏览器</p>
     </section>
 
+    <section>
+        [![](/images/vim/vimium_fmode.png)]()
+    </section>
+
+    <section>
+        [![](/images/vim/vimium_custom_search.png)]()
+    </section>
+
+    <section>
+        [![](/images/vim/vimium_help.png)]()
+    </section>
+
+    <section>
+            #<span class="negative"> Linux</span>
+            &nbsp;
+            ###<p>桌面与环境</p>
+            ###<p>开放与封闭</p>
+            ###<p>工具与效率</p>
+            ###<p>键盘与鼠标</p>
+            ###<p>思维方式</p>
+    </section>
+
+
+    <section>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        # The End
+        &nbsp;
+        ##<p>Thanks to all</p>
+    </section>
 
 
 

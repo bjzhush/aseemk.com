@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Vim 是什么？</h1>
+					<p class="fragment">
+						Vim 是这个星球上最好的编辑器
+					</p>
+				</section>
+
+				<section>
+					<h2>Vi 和 Vim 的区别与联系</h2>
+					<p class="fragment">
+						Vi是Bill Joy 在1976年开发的一款编辑器，Vi来自Visual这个单词。
+					</p>
+					<p class="fragment">
+						Vim是Bram Moolenaar在1991年首次公开发布的Vi的升级版，意为Vi IMproved。
+					</p>
+				</section>
+
+				<section>
+					<h1>Vim的最大特点</h1>
+					<p  class="fragment">自身功能强大</p>
+					<p  class="fragment">插件超级多，覆盖各个方面</p>
+					<p  class="fragment">可根据自己的需求高度定制</p>
+				</section>
+
+				<section>
+					<h1>为什么要用Vim</h1>
+					<p class="fragment"> 编辑是程序员最常用的操作</p>
+					<p class="fragment"> Vim是编辑效率最高的编辑器</p>
+					<p class="fragment"> 缩短时间，提高效率 </p>
+					<p class="fragment"> 保持思维的连贯性 </p>
+				</section>
+
+				<section>
+					<h1>哪里可以用Vim</h1>
+					<p class="fragment"> Linux/Win下的Terminal/CMD </p>
+					<p class="fragment"> Chrome/Firefox的插件</p>
+					<p class="fragment"> PHPStorm的IdeaVim插件</p>
+				</section>
+
+				<section>
+					<h1>Vim Mode</h1>
+					<p class="fragment"> Normal Mode </p>
+					<p class="fragment"> Insert Mode </p>
+					<p class="fragment"> Visual Mode </p>
+				</section>
+
+				<section>
+					<h1>基本使用之移动举例</h1>
+					<p class="fragment"> 字符/单词/行/句/段落/屏/页/文件 </p>
+					<p class="fragment"> HJKL </p>
+					<p class="fragment"> 行内一步移动到任意位置 </p>
+					<p class="fragment"> 文件内一步移动到目标行 </p>
+					<p class="fragment"> () { } </p>
+				</section>
+
+				<section>
+					<h1>基本使用之编辑举例</h1>
+					<p class="fragment"> i/a  </p>
+					<p class="fragment"> I/A  </p>
+					<p class="fragment"> o/O  </p>
+					<p class="fragment"> d/c  </p>
+				</section>
+
+				<section>
+					<h1>Vim 搜索 </h1>
+					<p>/pattern 向上搜索 </p>
+					<p>?pattern 向下搜索 </p>
+					<p>n/N 同方向/反方向继续搜索</p>
+					<p>/^place 仅搜索place开头的内容 </p>
+					<p>更多正则匹配....</p>
+				</section>
+
+				<section>
+					<h1>基本使用之块编辑举例</h1>
+					<p> 重构时删除function内所有内容</p>
+					<p> "IndexController@user" 删除""内所有内容</p>
+					<p> "IndexController@user" 删除Index并继续编写</p>
+				</section>
+
+				<section>
+					<h1>寄存器</h1>
+					 <p>基本寄存器yy p</p>
+					 <p>同时使用多个带命名的寄存器</p>
+					<p>Visual模式先选中，然后 "ay 复制，"ap 粘贴，a 为寄存器名，可同时使用多个</p>
+				</section>
+
+				<section>
+					<h1> Vimrc 的基本配置</h1>
+					<p> Vimrc包含了Vim运行时各种可选的及自定义的配置选项</p>
+					<p> .vimrc/_vimrc Linux/Windows</p>
+				</section>
+
+				<section>
+					<h1> Vim Script Language</h1>
+
+                    <pre><code data-trim data-noescape>
+						:h usr_41.txt
+					</code></pre>
+				</section>
+
+				<section>
+					<h1> Vim的多屏 </h1>
+					<p> Terminal->Tab->Tmux/Screen/Byobu->T/S/B Tab</p>
+					<p> Vim Tab -> Split/Vsplit</p>
+				</section>
+
+
+				<section>
+					<h1> Vim的书签 </h1>
+					<p> m{a-zA-Z}</p>
+					<p> '{a-zA-Z}</p>
+					<p> marks</p>
+				</section>
+
+				<section>
+					<h1> Vim文件类型与模板 </h1>
+                    <pre><code data-trim data-noescape>
+						:filetype
+					</code></pre>
+                    <pre><code data-trim data-noescape>
+						detection:ON plugin:ON indent:ON
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Tabs</h1>
+					<p>比如定制PHP的tab键</p>
+					<p>ftplugin/php.vim</p>
+					<p>set tabstop=4</p>
+                    <pre><code data-trim data-noescape>
+						:help tabstop
+					</code></pre>
+					<p>Number of spaces that a Tab in the file counts for</p>
+					<p>其它选项如shiftwidth softtabstop expandtab</p>
+				</section>
+
+				<section>
+					<h1>Vim文件编码 </h1>
+					<p> fileencoding:Sets the character encoding for the file of this buffer</p>
+					<p>Vim对于文件编码的识别</p>
+					<p>Vim对于文件编码的转换</p>
+					<p>:set fileencoding=  按Tab</p>
+				</section>
+
+				<section>
+					<h1> 插件的寻找与安装</h1>
+					<p>http://www.vim.org/scripts/ </p>
+                </section>
+
+				<section>
+					<section data-background-image="./image/2.png" data-background-size="contain">
+				</section>
+
+				<section>
+					<h1> PHP相关的Vim配置 </h1>
+					<p>syntax on/custom</p>
+					<p>custom manual</p>
+					<p>custom autoComplete</p>
+					<p>custom Theme</p>
+					<p>custom Doc generator</p>
+					<p>Ctags</p>
+					<p>.....</p>
+				</section>
+
+				<section>
+					<h1> Vim调用外部命令 </h1>
+					<p> :!ls /var/www</p>
+					<p> :r !ls /var/www</p>
+				</section>
+
+                <section>
+                    <h1>Vim 组合命令</h1>
+                    <p>:g/s*^$/d 删除所有空行</p>
+                    <p>:g!/^dd/d 删除不含字符串'dd'的行</p>
+					<p>.....</p>
+                </section>
+
+                <section>
+                    <h1> vim配置文件的管理 </h1>
+                    <p> 吸收别人的好的配置文件</p>
+                    <p> 维护自己的配置文件 </p>
+                    <p> 纳入Git进行控制和维护 </p>
+                </section>
+
+                <section>
+                    <p>怎么学Vim</p>
+                    <p>练习练习再练习</p>
+                    <p>思考思考再思考</p>
+                    <p>只选择自己需要的功能</p>
+                    <p>部分快捷键先记后忘</p>
+                    <p>Vim 101 Hacks.pdf</p>
+                </section>
+
+                <section>
+                    <h1>And Linux ?</h1>
+                </section>
+
+					<section>
+						<h1>Thanks to All !</h1>
+						</section>
+
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
